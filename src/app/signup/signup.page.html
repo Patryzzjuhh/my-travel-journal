@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="#ffffff">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login">
+        Log In
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="header">
+    <h1>Create your Account</h1>
+  </div>
+
+  <form id="form">
+    <app-input placeholder="Username"></app-input>
+    <app-input type="password" placeholder="Password"></app-input>
+    <ion-button expand="block" shape="round" (click)="createUser">Sign Up</ion-button>
+  </form>
+</ion-content>
